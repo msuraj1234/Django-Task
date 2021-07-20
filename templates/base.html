@@ -1,0 +1,64 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- <section class="ftco-section"> -->
+
+        <nav class="navbar navbar-expand-lg ftco_navbar navbar-dark bg-dark" id="ftco-navbar">
+            <div style="background-color: rgb(27, 27, 27);" class="container-fluid">
+                <img src="{% static 'images/sport1.jpg' %}" alt="slogo" width="80" height="40">
+                <img src="{% static 'images/portfolio.jpg' %}" alt="portlogo" href="/" width="130" height="40">
+                <!-- <a class="navbar-brand" >Digital</a> -->
+                <div class="social-media order-lg-last">
+                    <p class="mb-0 d-flex">
+                        <a style="text-decoration: none;" href="https://www.facebook.com/" class="d-flex align-items-center justify-content-center"><span
+                                class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                        <a style="text-decoration: none;" href="https://twitter.com/" class="d-flex align-items-center justify-content-center"><span
+                                class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                        <a style="text-decoration: none;" href="https://instagram.com/" class="d-flex align-items-center justify-content-center"><span
+                                class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                    </p>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto mr-md-3">
+                        <li style="font-family: cursive;" class="nav-item active"><a href="/home" class="nav-link"><b>Home</b></a></li>
+                        <li style="font-family: cursive;" class="nav-item"><a href="/profile" class="nav-link"><b>Profile</b></a></li>
+                        <li style="font-family: cursive;" class="nav-item"><a href="/contact" class="nav-link"><b>Contact</b></a></li>
+                        <li style="font-family: cursive;" class="nav-item"><a href="/about" class="nav-link"><b>About</b></a></li>
+                    </ul>
+                </div>
+
+        </nav>
+        <!-- END nav -->
+        </div>
+        {% block content %}{% endblock content %}
+    <!-- </section> -->
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
